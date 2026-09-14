@@ -14,5 +14,10 @@ pipeline {
               sh "docker --version"
             }
         }  
+         stage('check maven version') {
+            steps {
+              sh "mvn --version"
+            }
+        }
     }
 }
