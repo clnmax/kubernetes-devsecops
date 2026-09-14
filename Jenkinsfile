@@ -14,5 +14,10 @@ pipeline {
               sh "docker --version" //afficher la version docker
             }
         }  
+         stage('check maven version') {
+            steps {
+              sh "mvn --version" ///
+            }
+        }
     }
 }
